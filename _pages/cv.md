@@ -1,11 +1,19 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: cv
-nav: false
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav: true
+nav_order: 4
+redirect_url: https://your-cv-link-here.com # Replace this with your actual CV link
+description: Redirecting to CV...
 ---
+
+<script>
+// Immediate redirect to CV
+window.location.href = "{{ page.redirect_url }}";
+</script>
+
+<div class="text-center mt-5">
+  <h3>Redirecting to CV...</h3>
+  <p>If you are not redirected automatically, <a href="{{ page.redirect_url }}" target="_blank">click here</a>.</p>
+</div>
